@@ -8,7 +8,7 @@ def find_words(file):
         text = item['description']
         for i in text.split():
             if len(i) >= 6:
-                words.append(i)
+                words.append(i.lower())
     return words
 
 
